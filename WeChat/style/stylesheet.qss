@@ -1,0 +1,76 @@
+QDialog#logDialog, #registerDialog, #findPasswdDialog{
+    background-color:rgb(255,255,255)
+}
+
+#tip[state="normal"]{
+    color:green;
+}
+
+#tip[state="error"]{
+    color:red;
+}
+
+QPushButton#forget {
+    color: black;
+    border: none;
+    font-family: '宋体';
+    font-size: 12px;
+}
+QPushButton#forget:hover {
+    color: blue;
+}
+
+QLineEdit {
+    border: 1px solid lightgray;     /* 默认边框，可自行调色或设为 none */
+    border-radius: 8px;              /* 圆角半径，数值越大越圆 */
+    font-family: '宋体';             /* 字体 */
+    font-size: 14px;                 /* 字体大小 */
+    color:#605c99;                   /* 字体颜色（浅蓝色） */
+    padding: 1px;                    /* 让文字不要贴边 */
+}
+
+QLineEdit:focus {
+    outline: none;                   /* 防止系统自动加的虚线框 */
+    border: 1px solid lightgray;     /* 获取焦点时仍使用原来的边框（防止出现蓝线） */
+}
+
+QLabel{
+    font-family:'宋体';
+    color:#605c09;
+    font-size:15px;
+}
+
+QLabel#tip{
+    font-size:13px;
+}
+
+QPushButton {
+    font-family: '宋体';
+    font-size: 15px;
+    color: #324f4f;
+}
+
+
+
+
+QSplitter::handle {
+    width: 1px;
+}
+
+#spli QSplitter::handle:hover {
+    background-color: rgb(78, 78, 78);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,141 @@
+/*--------------------ChatListView and chatFriendListView-----------------------------------------*/
+
+/* chatUserListView、chatFriendListView 和 QListView 的垂直滚动条整体样式 */
+chatUserListView QScrollBar:vertical,
+chatFriendListView QScrollBar:vertical,
+QListView QScrollBar:vertical {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #f0f0f0, stop:1 #e0e0e0);      /* 背景轻微竖向渐变 */
+    width: 8px;                                                       /* 滚动条宽度8px */
+    margin: 0px ; /* 浮动到内容上 */                                             /* 无间距 */
+    border-radius: 4px;
+}
+
+/* chatUserListView、chatFriendListView 和 QListView 的垂直滚动条滑块正常状态 */
+chatUserListView QScrollBar::handle:vertical,
+chatFriendListView QScrollBar::handle:vertical,
+QListView QScrollBar::handle:vertical {
+    background: rgba(153, 153, 153, 0.3);                              /* 正常状态浅灰色滑块 */
+    min-height: 20px;                                                 /* 最小高度 */
+    border-radius: 4px;                                               /* 滑块圆角 */
+}
+
+/* chatUserListView、chatFriendListView 和 QListView 的垂直滚动条滑块悬停状态 */
+chatUserListView QScrollBar::handle:vertical:hover,
+chatFriendListView QScrollBar::handle:vertical:hover,
+QListView QScrollBar::handle:vertical:hover {
+    background: rgba(153, 153, 153, 0.5);                              /* 鼠标悬停时滑块变深一点 */
+}
+
+/* chatUserListView、chatFriendListView 和 QListView 的垂直滚动条滑块按下状态 */
+chatUserListView QScrollBar::handle:vertical:pressed,
+chatFriendListView QScrollBar::handle:vertical:pressed,
+QListView QScrollBar::handle:vertical:pressed {
+    background: rgba(153, 153, 153, 0.8);                              /* 鼠标按下时滑块再深一点 */
+}
+
+/* chatUserListView、chatFriendListView 和 QListView 的垂直滚动条上下箭头隐藏 */
+chatUserListView QScrollBar::add-line:vertical,
+chatUserListView QScrollBar::sub-line:vertical,
+chatFriendListView QScrollBar::add-line:vertical,
+chatFriendListView QScrollBar::sub-line:vertical,
+QListView QScrollBar::add-line:vertical,
+QListView QScrollBar::sub-line:vertical {
+    height: 0px;                                                      /* 隐藏上下箭头 */
+}
+
+/* chatUserListView、chatFriendListView 和 QListView 的垂直滚动条空白区域样式 */
+chatUserListView QScrollBar::add-page:vertical,
+chatUserListView QScrollBar::sub-page:vertical,
+chatFriendListView QScrollBar::add-page:vertical,
+chatFriendListView QScrollBar::sub-page:vertical,
+QListView QScrollBar::add-page:vertical,
+QListView QScrollBar::sub-page:vertical {
+    background: none;                                                 /* 空白区域透明 */
+}
+
+/*--------------------ChatListView and chatFriendListView-----------------------------------------*/
+
+
+
+
+
+
+
+
+
+/*--------------------chatMessageListView---------------------------------------------------------*/
+
+/* chatMessageListView 的垂直滚动条整体样式 */
+chatMessageListView QScrollBar:vertical {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #f0f0f0, stop:1 #e0e0e0);      /* 背景轻微竖向渐变 */
+    width: 8px;                                                       /* 滚动条宽度8px */
+    margin: 0px ; /* 浮动到内容上 */                                             /* 无间距 */
+    border-radius: 4px;
+}
+
+/* chatMessageListView 的垂直滚动条滑块正常状态 */
+chatMessageListView QScrollBar::handle:vertical {
+    background: rgba(153, 153, 153, 0.3);                                              /* 正常状态浅灰色滑块 */
+    min-height: 20px;                                                 /* 最小高度 */
+    border-radius: 4px;                                               /* 滑块圆角 */
+}
+
+/* chatMessageListView 的垂直滚动条滑块悬停（鼠标在滑块上）状态 */
+chatMessageListView QScrollBar::handle:vertical:hover {
+    background: rgba(153, 153, 153, 0.5);                                              /* 鼠标悬停时滑块变深一点 */
+}
+
+/* chatMessageListView 的垂直滚动条滑块按下（点击拖拽时）状态 */
+chatMessageListView QScrollBar::handle:vertical:pressed {
+    background: rgba(153, 153, 153, 0.8);                                              /* 鼠标按下时滑块再深一点 */
+}
+
+/* chatMessageListView 的垂直滚动条上/下箭头隐藏 */
+chatMessageListView QScrollBar::add-line:vertical,
+chatMessageListView QScrollBar::sub-line:vertical {
+    height: 0px;                                                      /* 隐藏上下箭头 */
+}
+
+/* chatMessageListView 的垂直滚动条滑块两侧空白区域样式 */
+chatMessageListView QScrollBar::add-page:vertical,
+chatMessageListView QScrollBar::sub-page:vertical {
+    background: none;                                                 /* 空白区域透明 */
+}
+
+/*--------------------chatMessageListView---------------------------------------------------------*/
+
+
+
+friendInfoWidget QLineEdit {
+    border: none;
+    border-bottom: 1px solid gray;
+    background: transparent;
+    padding: 2px;
+}
+
+friendInfoWidget QLineEdit:focus {
+    border-bottom: 1px solid #0078d7; /* 焦点时高亮底线 */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
